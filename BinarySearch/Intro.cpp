@@ -11,9 +11,9 @@ using namespace std;
 
 class Solution{
 public:
-    int search(nums, int target){
+    int search(vector<int> &nums, int target){
      int l = 0;
-     int h = sizeof(nums) - 1;
+     int h = nums.size()- 1;
      while(l<=h){
        int mid = (l + (h-l))/2;
         if(target == nums[mid]){
@@ -34,7 +34,7 @@ int main(){
     vector<int> nums ={1, 2, 45, 56, 65, 66, 78, 79};
     int target = 45;
     Solution s1;
-    int ans = s1.search(&nums, &target);
+    int ans = s1.search(nums, target);
     cout<<ans;
     return 0;
 }
