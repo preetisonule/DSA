@@ -1,4 +1,5 @@
 // all good
+// all operation done
 #include<iostream>
 #include<vector>
 using namespace std;
